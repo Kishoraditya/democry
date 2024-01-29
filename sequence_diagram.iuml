@@ -1,0 +1,9 @@
+
+@startuml
+title Sample Sequence Diagram
+
+{foreach row : df.iterrows()}
+${row[1]['From Address']} -> ${row[1]['To Address']}: ${row[1]['Transaction Time']}
+{endforeach}
+
+@enduml
